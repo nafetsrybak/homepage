@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
+    <!-- Framework -->
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3b650f9a66.js" crossorigin="anonymous"></script>
+
+    <!-- Smartlook -->
+    <script type='text/javascript'>
+      window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', '0657c76e6767bd00138fd45133bc429a24f911b4');
+    </script>
   </head>
   <body>
     <main>
       <article>
-        <div class="page" style="border-color: midnightblue;">
+        <div class="page" style="border-color: #3c3b6e;">
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
-                <!-- Avatar -->
+                <div class="avatar-wrapper" id="foto">
+                  <object class="avatar" data="./assets/images/Donald_Trump_official_portrait.png" role="img" aria-label="My profile picture"></object>
+                </div>
               </div>
               <div class="thirteen wide column">
                 <div class="stackable grid">
-                  <div class="sixteen wide column">
+                  <div class="sixteen wide column custom_sixteen">
                     <h1 class="name">Donald Trump</h1>
                     <div class="job">President of the United States of America</div>
                     <ul class="contacts">
@@ -52,7 +70,7 @@
                   </div>
                   <div class="sixteen wide column">
                     <h2>Résumé</h2>
-                    <p>
+                    <p class="resume">
                       “I’m the most successful person ever to run for the presidency, by far,” he told Des Moines Register this month. “Nobody’s ever been more successful than me. I’m the most successful person ever to run. Ross Perot isn’t successful like me. Romney – I have a Gucci store that’s worth more than Romney.”
                     </p>
                   </div>
@@ -65,11 +83,11 @@
               </div>
             </div>
             <div class="row">
-              <div class="ten wide column">
-                <h3>Experience</h3>
+              <div class="ten wide column ten_custom">
+                <h3><i class="fas fa-business-time"></i> Experience</h3>
                 <ul class="timeline">
                   <li>
-                    <p><small>Chairman and president, The Trump Organization, 1971–present:</small></p>
+                    <p class="punkt"><small>Chairman and president, The Trump Organization, 1971–present:</small></p>
                     <p>
                       <ul>
                         <li>
@@ -88,7 +106,7 @@
                     </p>
                   </li>
                   <li>
-                    <p><small>Host, The Apprentice, The Celebrity Apprentice, 2004–present:</small></p>
+                    <p class="punkt"><small>Host, The Apprentice, The Celebrity Apprentice, 2004–present:</small></p>
                     <p>
                       <ul>
                         <li>
@@ -101,7 +119,7 @@
                     </p>
                   </li>
                   <li>
-                    <p><small>Chapter 11 bankruptcy filer, 1991–?:</small></p>
+                    <p class="punkt"><small>Chapter 11 bankruptcy filer, 1991–?:</small></p>
                     <p>
                       <ul>
                         <li>
@@ -111,7 +129,7 @@
                     </p>
                   </li>
                   <li>
-                    <p><small>Writer, 1987–present:</small></p>
+                    <p class="punkt"><small>Writer, 1987–present:</small></p>
                     <p>
                       <ul>
                         <li>
@@ -130,7 +148,7 @@
                     </p>
                   </li>
                   <li>
-                    <p><small>Owner, founder, Trump University, 2005–2010; Trump Entrepreneur Initiative founder, owner, 2010–present:</small></p>
+                    <p class="punkt"><small>Owner, founder, Trump University, 2005–2010; Trump Entrepreneur Initiative founder, owner, 2010–present:</small></p>
                     <p>
                       <ul>
                         <li>
@@ -146,7 +164,7 @@
                     </p>
                   </li>
                   <li>
-                    <p><small>Founder, Trump Entertainment Resorts, 1995–2009:</small></p>
+                    <p class="punkt"><small>Founder, Trump Entertainment Resorts, 1995–2009:</small></p>
                     <p>
                       <ul>
                         <li>
@@ -159,7 +177,7 @@
               </div>
               <div class="six wide column">
                 <section>
-                  <h3>Education</h3>
+                  <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                   <p class="tags small">
                     <ul>
                       <li>
@@ -178,7 +196,7 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Political experience</h3>
+                  <h3><i class="fas fa-handshake"></i> Political experience</h3>
                   <ul>
                     <li>
                       Thought about running for president in 1987, and in 2000, and in 2008, and in 2012
@@ -189,7 +207,7 @@
                   </ul>
                 </section>
                 <section>
-                  <h3>Foreign policy</h3>
+                  <h3><i class="fas fa-balance-scale-right"></i> Foreign policy</h3>
                   <ul>
                     <li>
                       China, Japan and other countries are “ripping us off”. “We are being outfoxed by every country, every nation all over the world.” Would change this. “It’s about making America great again. I can do it, and nobody else can do it.”
@@ -200,7 +218,7 @@
                   </ul>
                 </section>
                 <section>
-                  <h3>Potential obstacles</h3>
+                  <h3><i class="fas fa-fist-raised"></i> Potential obstacles</h3>
                   <ul>
                     <li>
                       NBC executives are opposed: “They would love me not to run. Because I get a thing called ratings. And I have a very successful show.”
@@ -211,7 +229,7 @@
                   </ul>
                 </section>
                 <section>
-                  <h3>Awards</h3>
+                  <h3><i class="fas fa-award"></i> Awards</h3>
                   <ul>
                     <li>
                       Star on Hollywood Walk of Fame, 2007
